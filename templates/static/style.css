@@ -1,0 +1,86 @@
+
+body{
+    background-color: #0f1b21;;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+h1 {
+    font: Helvetica;
+    text-decoration: overline;
+    text-align: center;
+    font-style: italic;
+    color: white;
+   
+}
+h1:hover{
+    font: Helvetica;
+    text-decoration: underline;
+    text-align: center;
+    font-style: italic;
+    color:brown;
+    transition: 1s ease-out;
+
+}
+form{
+    margin-top: 15%;
+    text-align: center;
+    font: Helvetica;
+}
+
+input:focus{
+    transition: 2s ease-in-out;
+    width: 70%;
+}
+
+
+.button{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50px;
+    background: #51414F;
+    cursor: pointer;
+    margin:0 auto;
+}
+.button:hover{
+    background: #7ad148;
+    transition: 0.5s ease-in-out
+}
+.tbox{
+    margin:0 auto;
+    display: flex;
+    width: 550px;
+    
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: #1F3540;
+    padding: 50px;
+
+}
+.label{
+    align-items: start;
+    font-size: large;
+    color: white;
+}
+.downloadbutton{
+   float: right;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   max-width: 300px;
+   height: 50px;
+   font-size: 20px;
+   border-radius: 50px;
+   background:#48b6d1;
+   cursor: pointer;
+   margin:0 auto;
+}

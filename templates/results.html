@@ -1,0 +1,44 @@
+<html>
+    <link rel="stylesheet" href="static/style.css">
+    <body>
+        <nobr>
+            
+        <h1>RESULT</h1>
+        
+        <a class="downloadbutton" >Save as PDF</a>
+        
+        <!-- <form action="/seoanalyzer" method="post"> -->
+        <!-- <input type="button" value="download" onsubmit="download('out',{{res}})"/>
+        <script>
+            function download(filename, text) {
+            var element = document.createElement('a');
+            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+            element.setAttribute('download', filename);
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+            }
+            document.getElementById("btn").addEventListener("click",
+             function(){
+                var text = document.getElementById("text").value;
+                var filename = "output.txt";
+                download(filename, text);
+            }, false);
+        </script> -->
+   
+        <br>
+        <script>
+            var button=document.querySelector(".button");
+            button.addEventListener("click",() => {
+              window.print();
+            })
+          </script>
+        <p style="padding: 8%;margin: 5px;font-size: large;white-space:pre-wrap;" >
+             {{
+            res|safe
+        }}
+    </p>
+</nobr>
+        
+    </body>
+</html>

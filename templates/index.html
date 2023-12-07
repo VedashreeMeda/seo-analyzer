@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>SEO Analyzer</title>
+    <link rel="stylesheet" href="static/style.css">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/> -->
+    <!-- <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" /> -->
+  </head>
+  <body>
+    <h1> SEO Analyzer</h1>
+    <form action="/seoanalyzer" method="post">
+     <label class="label">URL</label> <input type="text" name="url" class="tbox" style="border-radius: 10px; padding: 10px;"/>
+     <br>
+    <label class="label" >Output Format</label> <input type="text" name="optype" class="tbox" style="border-radius: 10px; padding: 10px;"/>
+      <br >
+      <br>
+      <input type="submit" value="Submit" class="button">
+    </form>
+    <!-- <script>
+      function handleUrlInput(url) {
+        // Do something with the URL input.
+
+
+      }
+      window.onload = function() {
+        var urlInput = document.getElementById("url");
+        urlInput.addEventListener("input", function() {
+          handleUrlInput(urlInput.value);
+        });
+      };
+    </script> -->
+  </body>
+</html>
